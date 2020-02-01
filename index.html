@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Animated Form</title>
+		<!-- *Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
+			integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz"
+			crossorigin="anonymous"
+		/>
+
+		<!-- *CSS -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<form>
+			<div class="field__name">
+				<i class="fal fa-user"></i>
+				<input
+					type="text"
+					name="name"
+					id="Name"
+					required
+					placeholder="Name* (6 or more characters)"
+				/>
+				<i class="fas fa-arrow-alt-right"></i>
+			</div>
+			<div class="field__email inactive">
+				<i class="fal fa-envelope"></i>
+				<input
+					type="email"
+					name="email"
+					id="Email"
+					required
+					placeholder="Email*"
+				/>
+				<i class="fas fa-arrow-alt-right"></i>
+			</div>
+			<div class="field__password inactive">
+				<i class="fal fa-key"></i>
+				<input
+					type="password"
+					name="password"
+					id="Password"
+					required
+					placeholder="Password(6 or more characters)"
+				/>
+				<i class="fas fa-arrow-alt-right"></i>
+			</div>
+			<div class="field__finish inactive">
+				<i class="fal fa-thumbs-up"></i>
+				<p>Form submitted</p>
+				<i class="fal fa-thumbs-up"></i>
+			</div>
+			<div class="error__msg" id="error__msg"></div>
+		</form>
+	</body>
+	<script src="app.js"></script>
+</html>
